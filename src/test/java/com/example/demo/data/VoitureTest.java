@@ -11,7 +11,9 @@ public class VoitureTest {
 
     @Test
     void creerVoiture(){
-        assertEquals(1,1);
+        Voiture voiture = new Voiture();
+        voiture.setMarque("Peugeot");
+        assertEquals("Peugeot", voiture.getMarque());
     }
 
 }
